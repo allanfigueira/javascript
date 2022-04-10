@@ -1,9 +1,10 @@
 function insert(num)
 {
    var numero = document.getElementById('resultado').innerHTML;
-   document.getElementById('resuldado').innerHTML =  numero + num;
+   document.getElementById('resultado').innerHTML = numero + num;
 
-}
+} 
+
 function clean()
 {
     document.getElementById('resultado').innerHTML = '';
@@ -17,6 +18,8 @@ function calcular(){
     var resultado = document.getElementById('resultado').innerHTML;
     if(resultado)
     {
-        document.getElementById('resuldado').innerHTML = eval(resultado);
+        document.getElementById('resultado').innerHTML = eval(resultado)
+    } else {
+        document.getElementById('resultado').innerHTML = 'nada para calcular'
     }
 }
