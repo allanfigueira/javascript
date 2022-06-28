@@ -6,12 +6,12 @@ let pergunta = {
 let app = {
 start: function(){
         let alts = document.querySelectorAll('.alternativa');
-        alts.forEach(function(element,index){
-            element.addEventListener('click', function(){
-            console.log("checa resposta");
+        alts.forEach((element,index)=>{
+            element.addEventListener('click',()=>{
+            this.checaResposta(index);
             })
         })
-mostraquestao(pergunta);
+app.mostraquestao(pergunta);
 },
 
 mostraquestao: function(q){
@@ -23,6 +23,10 @@ mostraquestao: function(q){
     alts.forEach(function(element,index){
         element.textContent = q.alternativas[index];
     })
+},
+
+checaResposta: function(user){
+
 }
 }
 app.start();
