@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body>
+    <p>Javascript</p>
+    <p>HTML</p>
+    <p>CSS</p>
+    <p>SASS</p>
+    <p>REACT</p>
+    <p>Python</p>
+
+    <hr>
+    <div id="teste"></div>
+    <script>
+
+        // posso utilizar o * para selecionar todas as  tags da pagina (o indice não conta tags de fechamento)
+       var tagsP = document.getElementsByTagName('p')
+        var res = document.getElementById('teste')
+        
+        res.innerHTML=(tagsP[4].innerHTML)
+        
+        for(var i=0; i < tagsP.length; i++){
+            tagsP[i].style.color='red'
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date() manipulando data e hora</title>
+</head>
+<body>
+
+
+    <script>
+        var dt = new Date()
+        var ndt = new Date()//ano,mes,dia,hora,min,seg,mil
+        
+
+
+        var dia = ndt.getDate()
+        var mes = ndt.getMonth()
+        var ano = ndt.getFullYear()
+        var diasem = ndt.getDay()
+
+        var horas = ndt.getHours()
+        var minutos = ndt.getMinutes()
+        var segundos = ndt.getSeconds()
+
+
+        var meses = [
+            'Janeiro','Fevereiro','Março','Abril', 'Maio','Junho','Julho','Agosto','Setembro','Outubro','Novembro','Dezembro'
+        ]
+        var semana = [
+            'Domingo','Segunda-Feira','Terça-Feira','Quarta-feira','Quinta-feira','Sexta-Feira'
+        ]
+        document.write(`a data de hoje é ${dia}/${meses[mes]}/${ano}  e o dia da semana é: ${semana[diasem]}<br>`)
+        document.write(`${horas}:${minutos}:${segundos} <br>`)
+
+
+    </script>
+</body>
+</html>

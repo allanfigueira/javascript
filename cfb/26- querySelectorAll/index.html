@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>querySelectorAll</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: #84ffd6;
+        }
+        main{
+            margin: auto;
+            margin-top: 50px;
+            max-width: 600px;
+            background-color: #fff;
+            padding: 15px;
+            border-radius: 15px;
+            box-shadow: 2px 1px 7px #00000077;
+        }
+
+        h1,h2{
+            margin-bottom: 10px;
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            color: red;
+        }
+        p{
+            text-indent: 15px;
+        }
+        div{
+            width: 300px;
+            height: 100px;
+            border: 1px solid black;
+        }
+        div > p{
+            
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1 class="titulo">querySelectorAll</h1>
+        <p>O querySelectorAll() é um método que retorna os elementos do documento que correspondem a uma classe de css ou a uma tag específica.</p>
+        <h2 class="titulo">Curso de javascript</h2>
+        <p>www.youtube.com/cfbcursos</p>
+        <p>cfbcursos.com.br</p>
+        <div>
+            <p class="titulo">Este texto está dentro de uma div</p>
+            <p>Este também</p>
+        </div>
+        <a href="http://www.youtube.com/cfbcursos">Canal</a>
+        <a href="http://cfbcursos.com.br">Site</a>
+    </main>
+
+    <script>
+       /*
+       var ps=document.querySelectorAll('p')
+        ps[0].style.color='blue'
+        document.write(ps[0].innerHTML)
+        */
+
+        var elementos = document.querySelectorAll("div > p")
+        /*
+        Exemplos de seleção:
+            ('.titulo')  classe
+            ('#titulo')  id
+            ('p,h1,h3')  mais de um elemento
+            ('div > p')  elementos dentro de outro
+            ('div > *')  todos os elementos dentro de outro
+
+        */
+        for(var i = 0; i < elementos.length; i++){
+            //document.write(elementos[i].innerHTML+'<br>')
+            elementos[i].style.color='red'
+    
+        }
+    </script>
+</body>
+</html>

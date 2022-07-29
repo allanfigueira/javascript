@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>innerHTML</title>
+</head>
+<body>
+    <p id="texto">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime, magnam in. Iusto consectetur expedita iure quaerat officia ducimus nesciunt atque ipsam tempore perferendis! Velit quae similique impedit fugit. Neque, saepe.</p>
+    <input type="text" name="cxtext" id="Curso de Javascript">
+    <div id="dv">Texto da Div</div>
+
+    <script>
+        var cxt= document.getElementById('texto').innerHTML='Aula 24 - innerHTML'
+        alert(document.getElementById('dv').innerHTML)
+    </script>
+    
+</body>
+</html>

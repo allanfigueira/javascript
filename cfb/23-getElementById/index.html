@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>getElementById</title>
+</head>
+<body>
+    <p id="txt">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam dolore ea beatae voluptatum iusto aut impedit eveniet nobis nihil esse! Aut praesentium pariatur quisquam iure aperiam consequatur suscipit culpa doloremque.</p>
+
+    <div id="texto">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores ratione impedit eligendi amet fugiat enim consectetur ducimus nulla hic doloremque, distinctio dolores, illum deserunt atque. Harum nostrum rem animi minus.</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum dignissimos doloremque amet ea ducimus, iste officia doloribus quisquam quos et illo. Quibusdam quisquam, consequatur magnam nisi ab laudantium praesentium nemo.</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio reiciendis recusandae temporibus fuga debitis vel soluta eum quod voluptas, consequuntur porro nihil aperiam, quidem aspernatur eius deleniti dolores aliquid cum.</p>
+    </div>
+    <div id="cx"></div>
+    <script>
+        document.getElementById('txt').style.color='green'
+        document.getElementById('texto').style.color='red'
+        var cx = document.getElementById('cx')
+        cx.style.width="300px"
+        cx.style.height="300px"
+        cx.style.backgroundColor="red"
+        cx.style.border='1px solid black'
+        cx.style.margin='auto'
+    </script>    
+</body>
+
+</html>

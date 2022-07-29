@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flip card</title>
+    <style>
+        *{
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: #000;
+        }
+        section.card-contato{
+            width: 500px;
+            margin: 150px auto;
+
+        }
+        .face{
+            width: 400px;
+            min-height: 250px;
+            perspective: 700px;
+        }
+
+        .face h2{
+            color: #fff;
+            text-align: center;
+            margin: 20px;
+        }
+
+        .front, .back{
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            padding: 10px;
+            border-radius: 10px;
+            transition: 700ms;
+        }
+        .front{
+            background-image: linear-gradient(90deg , orange , red);
+            z-index: 1;
+        }
+        .back{
+            background: gray;
+            transform: rotateY(-180deg);
+            backface-visibility: hidden;
+        }
+        .face:hover .front{
+            transform: rotateY(180deg);
+            z-index: 0;
+        }
+        .face:hover .back{
+            transform: rotateY(0);
+            z-index: 1;
+        }
+
+        .p-frente{
+            color: white;
+            font-size: 18px;
+            margin-left: 10px;
+        }
+        h2.titulo-f{
+            margin-bottom: 90px;
+        }
+
+    </style>
+</head>
+<body>
+    <section>
+        <div class="face">
+            <div class="front">
+                <h2 class="titulo-f">&lt;/K&gt;risthian Figueira</h2>
+                <p class="p-frente"> 9 9 7 4 5  5 5 6 2</p>
+                <p class="p-frente">kristhianfigueirag@gmail.com</p>
+            </div>
+            <div class="back">
+                <h2>Back</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem error aliquam fugit nam blanditiis impedit esse voluptatibus, atque illum maxime ad quidem facilis, dolorum qui labore ea omnis, consequuntur soluta!</p>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem ratione culpa optio nostrum ipsa iure consequatur voluptate, ad, assumenda in quasi libero sit vitae laudantium fugiat at quia. Veniam, illo!</p>
+            </div>
+        </div>
+    </section>
+    
+
+    
+</body>
+</html>

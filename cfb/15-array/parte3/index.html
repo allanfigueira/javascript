@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //indexOf informa se o elemento está ou não dentro do array
+          
+        
+        /*
+        mochila.push('faca')
+        mochila.push('corda')
+        mochila.push('pederneira')
+        mochila.push('chave')
+        mochila.push('lanterna')
+        mochila.push('pedra')
+
+        pos = mochila.indexOf('chave')
+        if(pos < 0){
+            document.write('Item não esá na mochila')
+        }else{
+            document.write(`item está na mochila <br> Posição: ${pos}`)
+        }
+       */ 
+
+       //join junta todos os elementos de um array em uma variavel só em forma de string separadas por virgula 
+       var mochila=[]
+       var num = [5,8,4,9,7,3,6,0,2,1]
+       var numeros
+
+        
+         
+       //sort Serve para ordenar os elementos
+       //reverse serve para inverter a ordem dos elementos  
+        num.sort()
+        num.reverse()
+
+        numeros = num.join()
+        document.write(numeros+'<br>')
+        // num.reverse() reversão dos elementos na ordem que foi inserida
+
+
+        document.write(num[0]+'<br>')
+        document.write(num[1]+'<br>')
+        document.write(num[2]+'<br>')
+        document.write(num[3]+'<br>')
+        document.write(num[4]+'<br>')
+        document.write(num[5]+'<br>')
+        document.write(num[6]+'<br>')
+        document.write(num[7]+'<br>')
+        document.write(num[8]+'<br>')
+        document.write(num[9]+'<br>')
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recursividade</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        #quad{
+        height: 100px;
+        width: 100px;
+        border: 1px solid black;
+        border-radius: 50%;
+        justify-content: center;
+        }
+        .linha{
+            height: 1px;
+            background-color: #000;
+            width: 100%
+        }
+        .linha1{
+            transform:rotate(90deg);
+        }
+        .linha2{
+            transform:rotate(45deg);
+        }
+    </style>
+</head>
+<body>
+
+    <div id="quad">
+        <div class="linha - linha1"></div>
+        <div class="linha - linha2"></div>
+        <div class="linha - linha3"></div>
+        <div class="linha - linha4"></div>
+    </div>
+    
+    <script>
+
+        var quadrado = document.getElementById("quad")
+        var ang = 0
+        var px
+        var py
+        var anima
+        function girar(){
+            quadrado.style.transform="rotate("+ang+"deg)"
+            ang++
+            if(ang>360 || ang==-360){
+                ang=0
+            }
+            anima=requestAnimationFrame(girar)
+        }
+        girar()
+        
+
+        function contador(min,max){
+        document.write(min+"<br>")
+         if(min<max){
+            contador(++min,max)
+         }
+        }
+        contador(0,10)
+
+
+        function fatorial(n){
+            if(n==1){
+                return 1
+            }
+            return n*fatorial(n-1)
+        }
+        document.write(fatorial(5))
+    </script>
+</body>
+</html>
