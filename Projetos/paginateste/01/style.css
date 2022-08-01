@@ -178,7 +178,7 @@ h2.titulo-f{
     margin-bottom: 90px;
 }
   
-  @media (max-width: 980px) {
+  @media (max-width: 768px) {
     body {
       overflow-x: hidden;
     }
