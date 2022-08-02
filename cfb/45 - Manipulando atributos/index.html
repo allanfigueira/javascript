@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manipulando atributos html</title>
+    <style>
+        htm,body{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #D9D7CC;
+        }
+        #container{
+
+            background-color: #A64B5B;
+            height: 100vh;
+            width: 100vh;
+            margin: auto;
+            display:  flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            justify-content: space-around;
+        }
+        .btncar{
+            
+            margin-top: 30px;
+            border: none;
+            width: 100px;
+            height: 30px;
+            border-radius: 5px;
+            background-color: #FFF;
+            box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.507);
+            
+        }
+        #cardiv{
+            background-color: white;
+            width: 80%;
+            height: 500px;
+            border-radius: 15px;
+            box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.507);
+        }
+        .c1{
+            background-image: url("media/c1.png");
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        .c2{
+            background-image: url("media/c2.png");
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        .c3{
+            background-image: url("media/c3.png");
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        .c4{
+            background-image: url("media/c4.png");
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+    </style>
+</head>
+<body>
+    <section id="container">
+        <input type="button" value="carro 1" class="btncar" onclick="trocaCarro(1)">
+        <input type="button" value="carro 2" class="btncar" onclick="trocaCarro(2)">
+        <input type="button" value="carro 3" class="btncar" onclick="trocaCarro(3)">
+        <input type="button" value="carro 4" class="btncar" onclick="trocaCarro(4)">
+        <div id="cardiv"></div>
+    </section>
+    
+
+    <script>
+        //document.getElementById("cardiv").setAttribute("class","c1")
+        
+        function trocaCarro(c){
+            var obj = document.getElementById("cardiv")
+            var sec = document.getElementById("container")
+            var btns = document.getElementsByTagName("input")
+
+            if(c==1){
+                obj.setAttribute("class","c1")
+                document.body.style.backgroundColor="#006400"
+            } else if (c == 2){
+                obj.setAttribute("class","c2")
+            } else if (c == 3){
+                obj.setAttribute("class","c3")
+            } else if( c == 4){
+                obj.setAttribute("class", "c4")
+                document.body.style.backgroundColor="#FFFF00"
+                sec.style.backgroundColor="#000"
+                btns.st
+                
+            }
+        }
+    </script>
+</body>
+</html>
