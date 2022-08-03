@@ -17,7 +17,7 @@ class Calculator{
         this.operation = undefined;
     }
     updateDisplay(){
-        this.previousOperandTextElement.innerText = this.previousOperand
+        this.previousOperandTextElement.innerText = this.previousOperand;
         this.currentOperandTextElement.innerText = this.currentOperand;
     }
 }
@@ -28,7 +28,7 @@ const calculator = new calculator(
 )
 
 
-allClearButton.addEventListener('click',(){
-    calculator.clear();
+allClearButton.addEventListener('click',()=>{
+    calculator.clear(); 
     calculator.updateDisplay();
 })
