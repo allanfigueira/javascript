@@ -79,7 +79,7 @@
         function trocaCarro(c){
             var obj = document.getElementById("cardiv")
             var sec = document.getElementById("container")
-            var btns = document.getElementsByTagName("input")
+            var btn = document.getElementsByTagName('input')
 
             if(c==1){
                 obj.setAttribute("class","c1")
@@ -90,11 +90,13 @@
                 obj.setAttribute("class","c3")
             } else if( c == 4){
                 obj.setAttribute("class", "c4")
-                document.body.style.backgroundColor="#FFFF00"
-                sec.style.backgroundColor="#000"
-                btns.st
-                
+                document.body.style.backgroundColor="#FFFF00";
+                for(var i = 0 ; i < btn.length; i++){
+                    btn[i].style.backgroundColor="#000"
+                    btn[i].style.color="#fff"
+                }
             }
+        
         }
     </script>
 </body>
