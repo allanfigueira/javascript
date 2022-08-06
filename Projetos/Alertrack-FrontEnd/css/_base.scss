@@ -2,9 +2,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /*
-    a cada 1rem será considera 10px
-    */
     font-size: 62.5%;
   }
   $colorheader:#404259;
@@ -49,4 +46,8 @@
 
     }
     
+}
+#chartdiv {
+  width: 100%;
+  height: 250px;
 }
